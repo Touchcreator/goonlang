@@ -24,7 +24,7 @@ setup(
     install_requires=['lark'],
     entry_points = {
         'console_scripts': [
-            'goonlang = goonlangscripts.entry:main'
+            'goonlang = goonlang.__main__:main'
         ]
     },
     package_data = {
