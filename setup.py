@@ -11,7 +11,7 @@ classifiers = [
  
 setup(
     name='goonlang',
-    version='25.2.22.1',
+    version='25.2.22.2',
     description='A super simple programming language made with the lark package.',
     long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
     url='https://github.com/Touchcreator/goonlang',  
@@ -24,7 +24,7 @@ setup(
     install_requires=['lark'],
     entry_points = {
         'console_scripts': [
-            'goonlang = scripts.entry:main'
+            'goonlang = goonlangscripts.entry:main'
         ]
     },
     package_data = {
