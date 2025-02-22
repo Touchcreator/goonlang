@@ -1,6 +1,6 @@
 start: (statement ";")+ 
 
-statement: declaration -> declstate | function -> funcstate
+?statement: declaration | function 
 
 declaration: variable "=" assignment
 
