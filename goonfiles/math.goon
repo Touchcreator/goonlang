@@ -1,0 +1,8 @@
+x = 2;
+y = 3;
+
+print(1 + x + y);
+
+print(y - x);
+
+print("icl ts language lowkey growing on us, YES us!!");

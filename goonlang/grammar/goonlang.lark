@@ -1,6 +1,6 @@
-start: (statement ";")* 
+start: (statement)* 
 
-?statement: declaration | function 
+?statement: declaration ";" | function ";"
 
 declaration: NAME "=" value
 
@@ -8,7 +8,21 @@ function: NAME"(" [value+] ")"
 
 variable: NAME
 
-value: NUMBER -> number | function | variable | ESCAPED_STRING -> string
+code_block: "{" (statement)* "}"
+
+sum: term "+" term
+difference: term "-" term
+
+?term: NUMBER
+    | variable -> value
+    | sum
+    | difference
+
+value: NUMBER -> number 
+     | function 
+     | variable 
+     | ESCAPED_STRING -> string
+     | term
 
 %import common.WS
 %import common.CNAME -> NAME

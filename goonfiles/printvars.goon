@@ -7,3 +7,5 @@ number = 12;
 print("heres a number");
 
 print(number);
+
+x = 1 + 1;
