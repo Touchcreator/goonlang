@@ -1,0 +1,17 @@
+start: (statement ";")* 
+
+?statement: declaration | function 
+
+declaration: NAME "=" value
+
+function: NAME"(" [value+] ")"
+
+variable: NAME
+
+value: NUMBER -> number | function | variable | ESCAPED_STRING -> string
+
+%import common.WS
+%import common.CNAME -> NAME
+%import common.INT -> NUMBER
+%import common.ESCAPED_STRING
+%ignore WS

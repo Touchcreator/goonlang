@@ -1,0 +1,9 @@
+variable = "i love gooning";
+
+print(variable);
+
+number = 12;
+
+print("heres a number");
+
+print(number);
