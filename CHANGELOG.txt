@@ -1,5 +1,6 @@
-Changelog:
+# Changelog:
 
-25.2.22
+## 25.2.22
 -------------
 - Uploaded to PyPI, very very basic language
+- 25.2.22.1: Fixed description
