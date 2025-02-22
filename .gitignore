@@ -1,2 +1,10 @@
+# python stuffs
+
 */__pycache__
 __pycache__
+*.py[cod]
+
+# build stuffs
+build/
+dist/
+*.egg-info/
