@@ -1,4 +1,4 @@
-from lark import Lark, Transformer
+from lark import Transformer
 
 class Runner(Transformer):
     def __init__(self, parser):
