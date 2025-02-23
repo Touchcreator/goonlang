@@ -6,7 +6,8 @@ class Importer:
 
     def read_goonfile(self, filename):
         if self.is_goonfile(filename):
-            return open(filename, "r").read()
+            with open(filename, "r") as goon_code:
+                return goon_code.read()
         else:
             print("ERROR!!! NOT A GOONER FILE")
             exit()
