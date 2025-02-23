@@ -11,7 +11,7 @@ classifiers = [
  
 setup(
     name='goonlang',
-    version='25.2.22.2',
+    version='25.2.23',
     description='A super simple programming language made with the lark package.',
     long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.md').read(),
     url='https://github.com/Touchcreator/goonlang',  
